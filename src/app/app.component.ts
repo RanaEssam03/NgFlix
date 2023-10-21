@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngFlix';
+
+  fun(){
+    // console.log('any string');
+  }
 }
