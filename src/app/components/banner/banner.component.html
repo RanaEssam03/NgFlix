@@ -1,0 +1,21 @@
+<h1>{{ title }}</h1>
+<div class="grid">
+  <div class="col-2" *ngFor="let movie of shows">
+    <app-show-item [showItem]="movie"></app-show-item>
+  </div>
+</div>
+
+<!--
+<div class="banner container">
+  <div class="grid">
+<div *ngIf="movies$  | async as movies">
+  <div *ngFor="let movie of movies.results">
+    <div class="col-2" >
+      <app-show-item></app-show-item>
+    </div>
+  </div>
+
+</div>
+
+
+</div> -->

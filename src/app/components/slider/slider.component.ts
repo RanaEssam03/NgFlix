@@ -7,7 +7,6 @@ import {
 } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { MoviesService } from 'src/app/services/movies.service';
-import { Movie } from 'src/app/types/movie';
 
 @Component({
   selector: 'app-slider',
@@ -30,7 +29,7 @@ export class SliderComponent implements OnInit {
   }
 
   // observable
-  movies$ = this.moviesService.getPopularMovies();
+  movies$ = this.moviesService.getMoviesByType('popular');
 
 
   slideIndex = 0;
